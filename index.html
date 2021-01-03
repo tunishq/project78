@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Family book </title>
+    </head>
+    <body>
+        <h1> My family</h1>
+        <img id="imageholder" src="family.jfif">
+        <p id="namedisplay"> The Family Book </p>
+        <script>
+            var names = ["Tunishq","Priyanka","Saikat"];
+            console.log(names);
+            var images = ["https://www.bing.com/images/search?view=detailV2&ccid=ZdDHyY6E&id=4E9665E8D4D4E3DA438053BE57D1DDAA71272391&thid=OIP.ZdDHyY6EYeW66YXNuIdH6AHaIK&mediaurl=http%3a%2f%2fstatic.vectorcharacters.net%2fuploads%2f2012%2f05%2fBoy_Cartoon_Character_Preview_Big.jpg&exph=655&expw=594&q=cartoon+boy&simid=607989695427709224&ck=8D36FCC40E2C352CFBC80B3DD43AACC1&selectedIndex=16&FORM=IRPRST","https://www.bing.com/images/search?view=detailV2&ccid=WSdplCbW&id=D4FFCB888EDCE9B7FC30B145B7AEB09C41B83750&thid=OIP.WSdplCbWMMvjebZIPqz89QHaLa&mediaurl=http%3a%2f%2fwww.arealchange.com%2fblog%2fwp-content%2fuploads%2f2011%2f02%2fSandi-13.png&exph=3216&expw=2088&q=cartoon+mum&simid=608021641437711841&ck=6B07D6C430F7A1E5AAD32B3BDA9117FB&selectedIndex=12&FORM=IRPRST","https://www.bing.com/images/search?view=detailV2&ccid=JeHaVHLf&id=80C2083BE8AD216EB0CC1ED006A1282D411AC835&thid=OIP.JeHaVHLfkQrnUdB9B0HJQAAAAA&mediaurl=http%3a%2f%2fwww.how-to-draw-funny-cartoons.com%2fimage-files%2fcartoon-dad-005.jpg&exph=419&expw=250&q=cartoon+dad&simid=607993178664209593&ck=3E69144BA5E4AA2768D9230491E3FB3E&selectedIndex=5&FORM=IRPRST"];
+            console.log(images);
+            
+            function nextslide(){
+                document.getElementById("imageholder").src=images[i];
+                document.getElementById("namedisplay").innerHTML=names[i];
+            }
+        </script>
+        <button onclick="nextslide()">
+        </button>
+        
+    </body>
+</html>
